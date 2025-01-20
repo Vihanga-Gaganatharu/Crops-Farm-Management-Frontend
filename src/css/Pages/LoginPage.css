@@ -61,6 +61,8 @@ body > div{
     letter-spacing: 0.5px;
     padding-bottom: 10px;
     padding-left: 20px;
+    border-radius: 30px;
+    border: 1px solid #00ceff;
 }
 
 .form-container .form-floating label{
@@ -71,6 +73,7 @@ body > div{
 
 .form-container .form-floating input:focus{
     outline: none;
+    border-radius: 30px;
 }
 
 .checkbox-btn {

@@ -61,7 +61,7 @@ const RegisterPage = () => {
                                            placeholder="name@example.com"
                                            onChange={(e) => setEmail(e.target.value)}
                                     />
-                                    <label htmlFor="floatingInput">Email address</label>
+                                    <label htmlFor="floatingInput">Email</label>
                                 </div>
                                 <div className="form-floating mb-3 w-100">
                                     <input type="password" className="form-control password-input fw-bold border-0"
@@ -84,7 +84,7 @@ const RegisterPage = () => {
                                         <option value="ADMINISTRATIVE">ADMINISTRATIVE</option>
                                         <option value="SCIENTIST">SCIENTIST</option>
                                     </select>
-                                    <label htmlFor="floatingSelect">Select an option</label>
+                                    <label htmlFor="floatingSelect">Select an Role</label>
                                 </div>
 
 

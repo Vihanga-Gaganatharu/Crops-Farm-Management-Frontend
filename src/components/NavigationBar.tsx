@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import dashboard_icon from '../assets/icon/dashboard_icon.svg';
-import staff_icon from '../assets/icon/staff_icon.svg';
-import vehicle from '../assets/icon/vehicle.svg';
-import field_icon from '../assets/icon/field_icon.svg';
-import rqu_icon from '../assets/icon/rqu_icon.svg';
-import crop_icon from '../assets/icon/crop_icon.svg';
-import monitor_log from '../assets/icon/monitor_log.svg';
-import log_out from '../assets/icon/log_out.svg';
-import logo from '../assets/logo.png';
+import dashboard_icon from '../assets/icon/dashboard_icon.png';
+import staff_icon from '../assets/icon/staff_icon.png';
+import vehicle from '../assets/icon/vehicle.png';
+import field_icon from '../assets/icon/field_icon.png';
+import rqu_icon from '../assets/icon/rqu_icon.png';
+import crop_icon from '../assets/icon/crop_icon.png';
+import monitor_log from '../assets/icon/monitor_log.png';
+import log_out from '../assets/icon/log_out.png';
 import '../css/components/NavigationBar.css';
-import vehicleHover from '../assets/icon/hover/vehicle.svg';
-import fieldHover from '../assets/icon/hover/field_icon.svg';
-import rquHover from '../assets/icon/hover/rqu_icon.svg';
-import cropHover from '../assets/icon/hover/crop_icon.svg';
-import monitorLogHover from '../assets/icon/hover/monitor_log.svg';
-import staffHover from '../assets/icon/hover/staff_icon.svg';
-import dashboardHover from '../assets/icon/hover/dashboard_icon.svg';
+import vehicleHover from '../assets/icon/hover/vehicle.png';
+import fieldHover from '../assets/icon/hover/field_icon.png';
+import rquHover from '../assets/icon/hover/rqu_icon.png';
+import cropHover from '../assets/icon/hover/crop_icon.png';
+import monitorLogHover from '../assets/icon/hover/monitor_log.png';
+import staffHover from '../assets/icon/hover/staff_icon.png';
+import dashboardHover from '../assets/icon/hover/dashboard_icon.png';
+import logo from '../assets/logo.png';
 
 interface Icon {
     default: string;
@@ -61,10 +61,14 @@ const NavigationBar = () => {
 
     return (
         <div className="nav-bar text-center">
-            <img className="mt-5" src={logo} alt="logo" />
+            <img className="mt-5" src={logo} alt="Company Logo" />
             <div className="d-flex flex-column align-items-center justify-content-center h-75 gap-5 mt-5">
                 {Object.keys(icons).map((key) => (
-                    <Link to={`/dashboard/${navigations[key]}`} key={key}>
+                    <Link
+                        to={`/dashboard/${navigations[key] || ''}`}
+                        key={key}
+                        className={`nav-link ${activeButton === key ? 'active' : ''}`}
+                    >
                         <img
                             className={key}
                             src={
@@ -87,7 +91,7 @@ const NavigationBar = () => {
                     onMouseEnter={() => handleMouseEnter('log-out-btn')}
                     onMouseLeave={handleMouseLeave}
                     onClick={() => handleClick('log-out-btn')}
-                    alt="log out icon"
+                    alt="Log Out Icon"
                 />
             </div>
         </div>

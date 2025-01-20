@@ -42,12 +42,15 @@ canvas {
     color: var(--filed-color);
     font-size: var(--font-16px);
     letter-spacing: 0.5px;
+    border-radius: 30px;
+    border: 1px solid #00ceff;
 }
 
 .form-container .form-floating label {
     padding-left: 20px;
     font-size: var(--font-13px);
     font-weight: 500;
+
 }
 
 .form-container .form-floating input:focus {
@@ -71,6 +74,8 @@ canvas {
     cursor: pointer;
     height: 0;
     width: 0;
+    border-radius: 30px;
+    border: 1px solid #00ceff;
 }
 
 .checkbox-btn label {

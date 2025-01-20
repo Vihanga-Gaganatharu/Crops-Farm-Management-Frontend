@@ -48,8 +48,8 @@ const LoginPage = () => {
                         <h1 className="m-0 fw-medium">Green Shadow</h1>
                     </div>
                     <div className="form-container mt-5">
-                        <h3 className="fw-medium">Sign in your account</h3>
-                        <h4 className="mt-2 fw-medium">"Sign in to start managing your farm today!"</h4>
+                        <h3 className="fw-medium">Login your account</h3>
+                        <h4 className="mt-2 fw-medium">"Login your farm today!"</h4>
 
                         <div className="mt-5">
                             <div className="d-flex flex-column gap-3">
@@ -61,7 +61,7 @@ const LoginPage = () => {
                                         placeholder="name@example.com"
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
-                                    <label htmlFor="floatingInput">Email address</label>
+                                    <label htmlFor="floatingInput">Email</label>
                                 </div>
                                 <div className="form-floating position-relative w-100 border-0">
                                     <input
