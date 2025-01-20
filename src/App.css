@@ -33,10 +33,10 @@ body.swal2-height-auto {
 
 :root {
     --main-color: #00ceff;
-    --font-color: #1e1e1e;
+    --font-color: #0df7ff;
     --sub-font-color: #adadad;
-    --filed-color: #333;
-    --sub-text-font: #989898;
+    --filed-color: #0df7ff;
+    --sub-text-font: rgba(20, 255, 34, 0.67);
     --font-13px: 0.679vw;
     --font-18px: 0.979vw;
     --font-14px: 0.729vw;

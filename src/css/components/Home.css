@@ -20,8 +20,9 @@
     padding: 20px;
     width: 15vw;
     height: auto;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
+    border: 1px solid #00ceff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
 }
 
 #home-page .count-set h4{
@@ -30,7 +31,7 @@
 }
 
 #home-page .count-set h2{
-    color: #000;
+    color: #40ff00;
     font-size: 24px;
 }
 

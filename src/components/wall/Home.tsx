@@ -14,36 +14,24 @@ const Home = () => {
             <div className="d-flex w-100 justify-content-between count-set mt-4">
                 <div className="staff-count">
                     <h4>Staff Count</h4>
-                    <h1>50</h1>
+                    <h1>29</h1>
                 </div>
                 <div className="vehicle-count">
                     <h4>Vehicle Count</h4>
-                    <h1>50</h1>
+                    <h1>17</h1>
                 </div>
                 <div className="field-count">
                     <h4>Field Count</h4>
-                    <h1>50</h1>
+                    <h1>10</h1>
                 </div>
                 <div className="equipment-count">
                     <h4>Equipment Count</h4>
-                    <h1>50</h1>
+                    <h1>354</h1>
                 </div>
                 <div className="crop-count">
                     <h4>Crop Count</h4>
-                    <h1>50</h1>
+                    <h1>8560</h1>
                 </div>
-            </div>
-            <div className="charts w-100 d-grid">
-                {/*Vehicle Pie Chart*/}
-                <div className="mt-4">
-                    <canvas id="vehicleChart"></canvas>
-                </div>
-
-                {/*Equipment Donut Chart*/}
-                <div className="mt-4">
-                    <canvas id="equipmentChart"></canvas>
-                </div>
-
             </div>
         </div>
     );
